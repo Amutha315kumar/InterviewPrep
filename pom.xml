@@ -4,13 +4,14 @@
   <artifactId>GitHub</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
     <groupId>io.rest-assured</groupId>
     <artifactId>rest-assured</artifactId>
-    <version>5.4.0</version>
-
+    <version>5.5.0</version>
+    <scope>test</scope>
 </dependency>
+
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -31,5 +32,36 @@
     <artifactId>cucumber-testng</artifactId>
     <version>7.10.1</version>
 </dependency>
+<dependency>
+    <groupId>org.wiremock</groupId>
+    <artifactId>wiremock</artifactId>
+    <version>3.9.1</version>
+</dependency>
+
+
+    <!-- WireMock for stubbing/mocking APIs -->
+    <dependency>
+        <groupId>com.github.tomakehurst</groupId>
+        <artifactId>wiremock-jre8</artifactId>
+        <version>2.35.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- JSON path for parsing JSON responses -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-path</artifactId>
+        <version>5.3.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Hamcrest for assertions -->
+    <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest</artifactId>
+        <version>2.2</version>
+        <scope>test</scope>
+    </dependency>
+
 </dependencies>
 </project>
